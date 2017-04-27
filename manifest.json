@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Google Chrome Extension",
+  "version": "1.0",
+  "description": "Put red background and show a message when click button",
+ 
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://www.google.es/*"]
+  }],
+  "browser_action": {
+    "default_icon": "images/icon_128.png"
+  },
+  "icons": { 
+    "48":"images/icon_48.png", 
+    "128":"images/icon_128.png" 
+  }
+ 
+}
